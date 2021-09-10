@@ -1,0 +1,15 @@
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Release\svchost.exe.config
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Release\svchost.exe
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Release\svchost.pdb
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Release\svchost.xml
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Release\Wxaml.dll
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.Form1.resources
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.Resources.resources
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.vbproj.GenerateResource.Cache
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.exe
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.xml
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.pdb
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.vbprojResolveAssemblyReference.cache
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\Interop.IWshRuntimeLibrary.dll
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Release\svchost.vbproj.ResolveComReference.cache
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Release\Interop.IWshRuntimeLibrary.dll

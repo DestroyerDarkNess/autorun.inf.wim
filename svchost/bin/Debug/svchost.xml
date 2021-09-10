@@ -1,0 +1,554 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+svchost
+</name>
+</assembly>
+<members>
+<member name="T:svchost.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:svchost.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:svchost.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:svchost.My.Resources.Resources.Interop_IWshRuntimeLibrary">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:svchost.My.Resources.Resources.Wxaml">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="T:svchost.Core.Engine.Watcher.DriveWatcher">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ A device insertion and removal monitor.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="P:svchost.Core.Engine.Watcher.DriveWatcher.Drives">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Gets the connected drives on this computer.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="P:svchost.Core.Engine.Watcher.DriveWatcher.IsRunning">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Gets a value that determines whether the monitor is running.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.events">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ A list of event delegates.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="E:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChanged">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Occurs when a drive is inserted, removed, or changed.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="T:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Contains the event-data of a <see cref="E:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChanged"/> event.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="P:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs.DeviceEvent">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Gets the device event that occurred.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <value>
+ The drive info.
+ </value>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs.deviceEventsB">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ ( Backing field )
+ The device event that occurred.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="P:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs.DriveInfo">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Gets the drive info.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <value>
+ The drive info.
+ </value>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs.driveInfoB">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ ( Backing field )
+ The drive info.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs.#ctor">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Prevents a default instance of the <see cref="T:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs"/> class from being created.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs.#ctor(svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents,System.IO.DriveInfo)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Initializes a new instance of the <see cref="T:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs"/> class.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <param name="driveInfo">
+ The drive info.
+ </param>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.OnDriveStatusChanged(svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Raises <see cref="E:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChanged"/> event.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <param name="e">
+ The <see cref="T:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs"/> instance containing the event data.
+ </param>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="T:svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Specifies a change to the hardware configuration of a device.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <remarks>
+ <see href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa363480%28v=vs.85%29.aspx"/>
+ <para></para>
+ <see href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa363232%28v=vs.85%29.aspx"/>
+ </remarks>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents.Change">
+ <summary>
+ The current configuration has changed, due to a dock or undock.
+ </summary>
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents.Arrival">
+ <summary>
+ A device or piece of media has been inserted and becomes available.
+ </summary>
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents.QueryRemove">
+ <summary>
+ Request permission to remove a device or piece of media.
+ <para></para>
+ This message is the last chance for applications and drivers to prepare for this removal.
+ However, any application can deny this request and cancel the operation.
+ </summary>
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents.QueryRemoveFailed">
+ <summary>
+ A request to remove a device or piece of media has been canceled.
+ </summary>
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents.RemovePending">
+ <summary>
+ A device or piece of media is being removed and is no longer available for use.
+ </summary>
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DeviceEvents.RemoveComplete">
+ <summary>
+ A device or piece of media has been removed.
+ </summary>
+</member>
+<member name="T:svchost.Core.Engine.Watcher.DriveWatcher.DeviceType">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Specifies a computer device type.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <remarks>
+ <see href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa363246%28v=vs.85%29.aspx"/>
+ </remarks>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DeviceType.Logical">
+ <summary>
+ Logical volume.
+ </summary>
+</member>
+<member name="T:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Contains information about a logical volume.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <remarks>
+ <see href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa363249%28v=vs.85%29.aspx"/>
+ </remarks>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume.Size">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ The size of this structure, in bytes.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume.Type">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Set to DBT_DEVTYP_VOLUME (2).
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume.Reserved">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Reserved parameter; do not use this.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume.Mask">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ The logical unit mask identifying one or more logical units.
+ Each bit in the mask corresponds to one logical drive.
+ Bit 0 represents drive A, bit 1 represents drive B, and so on.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume.Flags">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ This parameter can be one of the following values:
+ '0x0001': Change affects media in drive. If not set, change affects physical device or drive.
+ '0x0002': Indicated logical volume is a network volume.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.#ctor">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Initializes a new instance of <see cref="T:svchost.Core.Engine.Watcher.DriveWatcher"/> class.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.Start">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Starts monitoring.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <exception cref="T:System.Exception">
+ Monitor is already running.
+ </exception>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.Stop">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Stops monitoring.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <exception cref="T:System.Exception">
+ Monitor is already stopped.
+ </exception>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.GetDriveLetter(svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Gets the drive letter stored in a <see cref="T:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume"/> structure.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <param name="Device">
+ The <see cref="T:svchost.Core.Engine.Watcher.DriveWatcher.DevBroadcastVolume"/> structure containing the device mask.
+ </param>
+ ----------------------------------------------------------------------------------------------------
+ <returns>
+ The drive letter.
+ </returns>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.WndProc(System.Windows.Forms.Message@)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Invokes the default window procedure associated with this window to process messages for this Window.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <param name="m">
+ A <see cref="T:System.Windows.Forms.Message"/> that is associated with the current Windows message.
+ </param>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.GetHashCode">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Serves as a hash function for a particular type.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.GetType">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Gets the <see cref="T:System.Type"/> of the current instance.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <returns>
+ The exact runtime type of the current instance.
+ </returns>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.Equals(System.Object)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Determines whether the specified <see cref="T:System.Object"/> instances are considered equal.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.ToString">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Returns a String that represents the current object.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.AssignHandle(System.IntPtr)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Assigns a handle to this window.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.CreateHandle(System.Windows.Forms.CreateParams)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Creates a window and its handle with the specified creation parameters.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.DestroyHandle">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Destroys the window and its handle.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.ReleaseHandle">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Releases the handle associated with this window.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.GetLifeTimeService">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Retrieves the current lifetime service object that controls the lifetime policy for this instance.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.InitializeLifeTimeService">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Obtains a lifetime service object to control the lifetime policy for this instance.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.CreateObjRef(System.Type)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Creates an object that contains all the relevant information to generate a proxy used to communicate with a remote object.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.DefWndProc(System.Windows.Forms.Message@)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Invokes the default window procedure associated with this window.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="F:svchost.Core.Engine.Watcher.DriveWatcher.isDisposed">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ To detect redundant calls when disposing.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.Dispose">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Releases all the resources used by this instance.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="M:svchost.Core.Engine.Watcher.DriveWatcher.Dispose(System.Boolean)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+ Releases unmanaged and - optionally - managed resources.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <param name="isDisposing">
+ <see langword="True"/>  to release both managed and unmanaged resources; 
+ <see langword="False"/> to release only unmanaged resources.
+ </param>
+ ----------------------------------------------------------------------------------------------------
+</member>
+<member name="T:svchost.FileDirSearcher">
+ <summary>
+ Searchs for files and directories.
+ </summary>
+</member>
+<member name="M:svchost.FileDirSearcher.GetFiles(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Gets the files those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="dirPath">The root directory path to search for files.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="fileNamePatterns">The file name pattern(s) to match.</param>
+ <param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+ <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the files information.</returns>
+ <exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member>
+<member name="M:svchost.FileDirSearcher.GetFilePaths(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Gets the filepaths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="dirPath">The root directory path to search for files.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="fileNamePatterns">The file name pattern(s) to match.</param>
+ <param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+ <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the filepaths.</returns>
+ <exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member>
+<member name="M:svchost.FileDirSearcher.GetDirs(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Gets the directories those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="dirPath">The root directory path to search for directories.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+ <param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+ <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the dirrectories information.</returns>
+ <exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member>
+<member name="M:svchost.FileDirSearcher.GetDirPaths(System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Gets the filepaths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="dirPath">The root directory path to search for directories.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+ <param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+ <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> instance containing the directory paths.</returns>
+ <exception cref="T:System.ArgumentException">dirPath or searchOption</exception>
+</member>
+<member name="M:svchost.FileDirSearcher.AnalyzePath(System.String@)">
+ <summary>
+ Analyzes a directory path and perform specific changes on it.
+ </summary>
+ <param name="dirPath">The directory path.</param>
+ <exception cref="T:System.ArgumentNullException">dirPath;Value is null, empty, or white-spaced.</exception>
+</member>
+<member name="M:svchost.FileDirSearcher.CollectFiles(System.Collections.Concurrent.ConcurrentQueue{System.IO.FileInfo},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Collects the files those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new files.</param>
+ <param name="dirPath">The root directory path to search for files.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="fileNamePatterns">The file name pattern(s) to match.</param>
+ <param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+</member>
+<member name="M:svchost.FileDirSearcher.CollectFilePaths(System.Collections.Concurrent.ConcurrentQueue{System.String},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Collects the filepaths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new filepaths.</param>
+ <param name="dirPath">The root directory path to search for files.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="fileNamePatterns">The file name pattern(s) to match.</param>
+ <param name="fileExtPatterns">The file extension pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="fileNamePatterns"/> and <paramref name="fileExtPatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to file or directory.</param>
+</member>
+<member name="M:svchost.FileDirSearcher.CollectDirs(System.Collections.Concurrent.ConcurrentQueue{System.IO.DirectoryInfo},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Collects the directories those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new directories.</param>
+ <param name="dirPath">The root directory path to search for directories.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+ <param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+</member>
+<member name="M:svchost.FileDirSearcher.CollectDirPaths(System.Collections.Concurrent.ConcurrentQueue{System.String},System.String,System.IO.SearchOption,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Boolean)">
+ <summary>
+ Collects the directory paths those matches the criteria inside the specified directory and/or sub-directories.
+ </summary>
+ <param name="queue">The <see cref="T:System.Collections.Concurrent.ConcurrentQueue`1"/> instance to enqueue new directory paths.</param>
+ <param name="dirPath">The root directory path to search for directories.</param>
+ <param name="searchOption">The searching mode.</param>
+ <param name="dirPathPatterns">The directory path pattern(s) to match.</param>
+ <param name="dirNamePatterns">The directory name pattern(s) to match.</param>
+ <param name="ignoreCase">If <c>True</c>, ignores the comparing case of <paramref name="dirPathPatterns"/> and <paramref name="dirNamePatterns"/> patterns.</param>
+ <param name="throwOnError">Determines whether exceptions will be thrown, like access denied to directory.</param>
+</member>
+<member name="M:svchost.Form1.DriveMon_DriveStatusChanged(System.Object,svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs)">
+ ----------------------------------------------------------------------------------------------------
+ <summary>
+ Handles the <see cref="E:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChanged"/> event of the <see cref="P:svchost.Form1.DriveMon"/> instance.
+ </summary>
+ ----------------------------------------------------------------------------------------------------
+ <param name="sender">
+ The source of the event.
+ </param>
+ 
+ <param name="e">
+ The <see cref="T:svchost.Core.Engine.Watcher.DriveWatcher.DriveStatusChangedEventArgs"/> instance containing the event data.
+ </param>
+ ----------------------------------------------------------------------------------------------------
+</member>
+</members>
+</doc>

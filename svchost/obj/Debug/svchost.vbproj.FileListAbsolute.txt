@@ -1,0 +1,30 @@
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Debug\svchost.exe.config
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Debug\svchost.exe
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Debug\svchost.pdb
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Debug\svchost.xml
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Debug\Wxaml.dll
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.vbprojResolveAssemblyReference.cache
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.Form1.resources
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.Resources.resources
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.vbproj.GenerateResource.Cache
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.exe
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.xml
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.pdb
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\bin\Debug\Interop.IWshRuntimeLibrary.dll
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\Interop.IWshRuntimeLibrary.dll
+c:\users\s4lsalsoft\documents\visual studio 2015\Projects\svchost\svchost\obj\Debug\svchost.vbproj.ResolveComReference.cache
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\bin\Debug\svchost.exe.config
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.vbproj.ResolveComReference.cache
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.exe
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.xml
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.pdb
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\bin\Debug\svchost.exe
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\bin\Debug\svchost.pdb
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\bin\Debug\svchost.xml
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\bin\Debug\Wxaml.dll
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\bin\Debug\Interop.IWshRuntimeLibrary.dll
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.vbprojResolveAssemblyReference.cache
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.Form1.resources
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.Resources.resources
+C:\Users\S4Lsalsoft\Documents\Github\autorun.inf.wim\svchost\obj\Debug\svchost.vbproj.GenerateResource.Cache
